@@ -1,0 +1,66 @@
+@import "./_variables.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block {
+  position: relative;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+
+  &__button {
+    width: 200px;
+    height: 56px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    border-radius: 12px;
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    background-color: $button-bg;
+    color: $font-color;
+  }
+
+  &__tooltip {
+    height: 62px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin-top: 9px;
+    font-size: 12px;
+    line-height: 14px;
+
+    position: absolute;
+    text-align: center;
+
+    background-color: $tooltip-bg;
+    color: $font-color;
+
+    &:before {
+      width: 20px;
+      height: 20px;
+      top: -5px;
+      left: 50%;
+
+      content: "";
+      position: absolute;
+      transform: rotate(45deg) translate(-50%, 50%);
+
+      background-color: $tooltip-bg;
+      border-radius: 3px 15px 2px 15px;
+    }
+  }
+}
