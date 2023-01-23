@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <ButtonTest msg="Welcome to Your Vue.js + TypeScript App" />
+    <ButtonTest />
   </div>
 </template>
 
